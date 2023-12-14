@@ -13,11 +13,16 @@ const game_session = require('./routes/game_session');
 // TODO: application port should come from config file
 const port = 3000;
 
+// Changed root user password to 'password'
+// insteal of using a user called 'app', I am just going to use the 'root' user to do everything
+// because we have all the privleges at hand, and this is not a commercial software.
+//-----------------------------------------------------------------------//
+// NOTE:: I had a lot of trouble actually getting this set up.
 // TODO: database connection parameters should come from config file
 const db = mysql.createConnection({
 	host: 'localhost',
-	user: 'app',
-	password: 'wonderful',
+	user: 'root',
+	password: 'password',
 	database: 'miechallenge'})
 
 db.connect((err) => {
