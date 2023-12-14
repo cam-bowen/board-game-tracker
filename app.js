@@ -19,6 +19,8 @@ const port = 3000;
 //-----------------------------------------------------------------------//
 // NOTE:: I had a lot of trouble actually getting this set up.
 // TODO: database connection parameters should come from config file
+
+
 const db = mysql.createConnection({
 	host: 'localhost',
 	user: 'root',
