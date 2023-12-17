@@ -1,9 +1,17 @@
 <%- include('partials/header.ejs') %>
 
 <div>
-	TODO: Display list of board games
+    <h2> <%- title %></h2>
+
+    <h3> 
+        <% for(var i=0; i<players.length; i++) { %>
+            <li>  <%= JSON.stringify(players[i]["Game"])%> </li>
+         <% } %>
+    
+    </h3>
 </div>
 
-<a href="/add-game">Add Game</a>
+<a href="/add-game"><button>Add Game</button></a>
+<a href="/edit-game"><button>Edit Game Information</button></a>
 
 <%- include ('partials/footer.ejs') %>

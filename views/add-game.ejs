@@ -1,5 +1,18 @@
 <%- include ('partials/header.ejs') %>
 
-TODO: Make a form for adding a game
+<h3>Enter the info for your new game!</h3>
+
+<form method="post" action="localhost:3000/add_game_post">
+    <label for="">
+        <input type="text" name="Game_Name" value="Game_Name" placeholder="add the game name">
+    </label>
+    <label for ="">
+        <input type="integer" name="Days_Played" value="Days_Played" placeholder="add the days played">
+    </label>
+    <label for ="">
+        <input type="text" name="Recent_Date_Played" value="??/??/????" placeholder="add the recent date of game played">
+    </label>
+    <button>Enter Info</button>
+</form>
 
 <%- include ('partials/footer.ejs') %>
