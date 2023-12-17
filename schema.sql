@@ -4,7 +4,6 @@
 
 # TODO: add mysql/mariadb table definitions
     CREATE TABLE miechallenge.game_info (
-        ID INT(4) NOT NULL,
         Game NVARCHAR(50) NOT NULL,
         Days_Played INT(5) NOT NULL,
         Recent_Date_Played NVARCHAR(50) NOT NULL,
