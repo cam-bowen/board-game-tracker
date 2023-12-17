@@ -4,6 +4,11 @@ module.exports = {
 			title: 'Board Games | Add game'
 		});
 	},
+	getEdit: (req, res) => {
+		res.render('edit-game.ejs', {
+			title: 'Board Games | Edit Game'
+		});
+	},
 	postAdd: (req, res) => {
 		console.log(req.body);
 			

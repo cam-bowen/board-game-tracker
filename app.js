@@ -47,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', getHomePage);
 app.get('/add-game', game.getAdd);
+app.get('/edit-game', game.getEdit);
 app.post('/add-game', game.postAdd);
 app.get('/edit-game/:id', game.getEdit);
 app.post('/edit-game/:id', game.postEdit);
