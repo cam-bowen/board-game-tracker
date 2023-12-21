@@ -5,7 +5,10 @@
 
     <h3> 
         <% for(var i=0; i<players.length; i++) { %>
-            <li>  <%= JSON.stringify(players[i]["Game"])%> </li>
+            <dl>
+            <dt> <%= JSON.stringify(players[i]["Game"])%> </dt>
+             <%= JSON.stringify(players[i]["Recent_Date_Played"])%>
+            </dl>
          <% } %>
     
     </h3>
