@@ -1,8 +1,18 @@
 <%- include ('partials/header.ejs') %>
 
-<h2>hi</h2>
 
+<h2>enter the name of the game you want to update...</h2>
+<form method="post" action="/edit-game">
+    <input type="text" name="Name_Of_Edited_Game" value="" placeholder="enter the game name"/>
+    <h3>Enter the new name, days played, and recent date played below:</h3>
+    <h3>Must enter all values.</h3>
+    <input type="text" name="New_Game_Name" value="" placeholder="enter new name"/>
+    <input type="text" name="New_Days_Played" value="" placeholder="enter new days played"/>
+    <input type="text" name="New_Recent_Date_Played" value="" placeholder="enter new recent date"/>
+    <input type="submit" value="Edit Game"/>
+</form>
 <br></br>
+
 <a href="/"><button>Back</button></a>
 
 <%- include ('partials/footer.ejs') %>
