@@ -1,6 +1,6 @@
 module.exports = {
 	getAdd: (req, res) => {
-		res.render('add-game.ejs', {
+		res.render('add-game-session.ejs', {
 			title: 'Board Games | Add game'
 		});
 	},
