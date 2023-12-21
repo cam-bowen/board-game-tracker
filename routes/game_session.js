@@ -11,6 +11,9 @@ module.exports = {
 	},
 	postAdd: (req, res) => {
 		console.log(req.body);
+
+
+
 			
 		// TODO db.query to insert game-playing session
 
