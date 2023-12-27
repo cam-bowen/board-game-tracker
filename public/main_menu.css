@@ -1,0 +1,74 @@
+/* main_menu.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .game-list {
+    margin-bottom: 20px;
+  }
+  
+  .game-list dl {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .game-list dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .game-list dd {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item a {
+    display: block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item a:hover {
+    background-color: #45a049;
+  }
+  
