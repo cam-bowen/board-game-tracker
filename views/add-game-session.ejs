@@ -1,6 +1,10 @@
 <%- include ('partials/header.ejs') %>
 
-<h1>hi</h1>
+<h2>Enter the game you played today:</h2>
+<form method="post" action="/add-game-session">
+    <input type="text" name="Name_Of_Game_Wanted_To_Play" value="" placeholder="enter the game name"/>
+    <input type="submit" value="Play Game"/>
+</form>
 TODO: Make a form for adding a game-playing session <br></br>
 what game was played and current date?
 
