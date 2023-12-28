@@ -132,7 +132,7 @@ Average Use Of App
 HOW TO START THE APP
 ====
 
-0.  [NOTE]I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least that wnat I believe what is going on...
+0.  [NOTE]I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least thats what I believe is going on...
 
 1. create a user named "root" with the password "password" with mysql/mariadb.
 
