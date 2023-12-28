@@ -136,7 +136,7 @@ HOW TO START THE APP
 
 1. create a user named "root" with the password "password" with mysql/mariadb.
 
-2. All you have to do to run this, is create a mariadb called "miechallenge" and run the CREATE TABLE "......" command in the schema.sql in the mysql terminal/command line. (make sure you do step 1)
+2. create a mariadb called "miechallenge" and run the CREATE TABLE "......" command in the schema.sql in the mysql terminal/command line. (make sure you do step 1)
 
 3. npm install, npm start.
 
