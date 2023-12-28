@@ -92,3 +92,43 @@ mysql devchallenge_$APPLICANT_USER < schema.sql
 npm install
 npm start
 ```
+
+
+
+Notes::: changes made by Cameron Bowen.
+
+What each page does.
+
+Main menu/index : shows the user the library of games, and 3 buttons (play, edit, add a game).
+
+Play Game : You type the name of your game in that you have just played, and the database will increment the number of days you nave played the game.
+
+Edit Game Info : You type the name of the game you want to edit. After that you HAVE to change the name of it, amount of days played, and recent date. If YOU DO NOT WANT to edit cerain columns/fields, you can just re-enter the value that was there previously, but you must enter something or you will lose the old data for that game.
+
+Add Game : Did you get a new board game? If so, just type the name of it into the text field and it will get added to the databse, with default values in the days played and recent date played field, don't worry, once you "play" the game the data and number of days played will be changed.
+
+****** Best case scenario : 
+
+You get a new game and enter it into the website. 
+
+You play the game.
+
+The # of days played field goes to 1 and the recent date is added to the receent data played field, which you can see at the main menu.
+
+You really should never have to edit game information, unless you misspell a game name or forget to hit "play" after a game session. *****
+
+
+HOW TO START THE APP
+
+1. I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least that wnat I believe what is going on. 
+
+2. create a user named "root" with the password "password" and the web app will run fine after you complete step 3...
+
+3. All you have to do to run this, is create a mariadb called "miechallenge" and run the CREATE TABLE ...... command in the schema.sql in the mysql terminal/command line. (make sure you do step 2)
+
+4. npm install, npm start.
+
+photos of the gui + console output in folder "screenshots"
+
+
+

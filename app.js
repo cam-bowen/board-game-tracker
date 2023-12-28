@@ -11,13 +11,12 @@ const game = require('./routes/game');
 const game_session = require('./routes/game_session');
 
 // TODO: application port should come from config file
-const port = 3000;
+const port = 3000; // had to change to this port, 3306 was giving me trouble.
 
 // Changed root user password to 'password'
 // insteal of using a user called 'app', I am just going to use the 'root' user to do everything
 // because we have all the privleges at hand, and this is not a commercial software.
 //-----------------------------------------------------------------------//
-// NOTE:: I had a lot of trouble actually getting this set up.
 // TODO: database connection parameters should come from config file
 
 
@@ -49,6 +48,7 @@ app.get('/', getHomePage);
 app.get('/add-game', game.getAdd);
 app.get('/edit-game', game.getEdit);
 app.post('/add-game', game.postAdd);
+app.post('/edit-game', game.postEdit);
 app.get('/edit-game/:id', game.getEdit);
 app.post('/edit-game/:id', game.postEdit);
 app.get('/add-game-session', game_session.getAdd);

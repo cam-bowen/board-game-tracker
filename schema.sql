@@ -1,13 +1,10 @@
 
-# This is what I typeed in the terminal, I did all these manualley
-# on my own local sql server
 
 # TODO: add mysql/mariadb table definitions
     CREATE TABLE miechallenge.game_info (
         Game NVARCHAR(50) NOT NULL,
         Days_Played INT(5) NOT NULL,
-        Recent_Date_Played NVARCHAR(50) NOT NULL,
-        PRIMARY KEY(ID)
+        Recent_Date_Played NVARCHAR(50) NOT NULL
     );
 
 # TODO: add sample data

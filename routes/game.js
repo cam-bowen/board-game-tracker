@@ -1,4 +1,4 @@
-module.exports = { // this is where you get the data, that will be updated to the DB.
+module.exports = { 
 	getAdd: (req, res) => {
 		res.render('add-game.ejs', {
 			title: 'Board Games | Add game'
