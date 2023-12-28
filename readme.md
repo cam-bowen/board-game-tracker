@@ -95,9 +95,10 @@ npm start
 
 
 
-Notes::: changes made by Cameron Bowen.
+Notes by Cameron Bowen
+====
 
-What each page does.
+What each page does:
 
 Main menu/index : shows the user the library of games, and 3 buttons (play, edit, add a game).
 
@@ -105,9 +106,12 @@ Play Game : You type the name of your game in that you have just played, and the
 
 Edit Game Info : You type the name of the game you want to edit. After that you HAVE to change the name of it, amount of days played, and recent date. If YOU DO NOT WANT to edit cerain columns/fields, you can just re-enter the value that was there previously, but you must enter something or you will lose the old data for that game.
 
-Add Game : Did you get a new board game? If so, just type the name of it into the text field and it will get added to the databse, with default values in the days played and recent date played field, don't worry, once you "play" the game the data and number of days played will be changed.
+Add Game : Did you get a new board game? If so, just type the name of it into the text field and it will get added to the database with default values in the days played and recent date played field, don't worry, once you "play" the game the data and number of days played will be changed to the correct values, instead of those null values initeated when you add the game to the libarary. 
 
-****** Best case scenario : 
+/----------/
+
+Best Case Scenario
+====
 
 You get a new game and enter it into the website. 
 
@@ -119,6 +123,7 @@ You really should never have to edit game information, unless you misspell a gam
 
 
 HOW TO START THE APP
+====
 
 1. I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least that wnat I believe what is going on. 
 
