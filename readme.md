@@ -132,15 +132,17 @@ Average Use Of App
 HOW TO START THE APP
 ====
 
-1. I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least that wnat I believe what is going on. 
+0.  [NOTE]I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least that wnat I believe what is going on...
 
-2. create a user named "root" with the password "password" and the web app will run fine after you complete step 3...
+1. create a user named "root" with the password "password" with mysql/mariadb.
 
-3. All you have to do to run this, is create a mariadb called "miechallenge" and run the CREATE TABLE ...... command in the schema.sql in the mysql terminal/command line. (make sure you do step 2)
+2. All you have to do to run this, is create a mariadb called "miechallenge" and run the CREATE TABLE "......" command in the schema.sql in the mysql terminal/command line. (make sure you do step 1)
 
-4. npm install, npm start.
+3. npm install, npm start.
 
-photos of the gui + console output in folder "screenshots"
+
+Photos of GUI + Console Output in "Screenshots" Folder.
+===
 
 
 
