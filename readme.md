@@ -108,9 +108,7 @@ Edit Game Info : You type the name of the game you want to edit. After that you 
 
 Add Game : Did you get a new board game? If so, just type the name of it into the text field and it will get added to the database with default values in the days played and recent date played field, don't worry, once you "play" the game the data and number of days played will be changed to the correct values, instead of those null values initeated when you add the game to the libarary. 
 
-/----------/
-
-Best Case Scenario
+Best Case Scenario When Adding A Game
 ====
 
 You get a new game and enter it into the website. 
@@ -119,8 +117,17 @@ You play the game.
 
 The # of days played field goes to 1 and the recent date is added to the receent data played field, which you can see at the main menu.
 
-You really should never have to edit game information, unless you misspell a game name or forget to hit "play" after a game session. *****
+You really should never have to edit game information, unless you misspell a game name or forget to hit "play" after a game session.
 
+
+Average Use Of App
+====
+
+1. You play a game with friends you already have.
+
+2. After playing, you start app, go to "Play Game" and type the name of the game you played.
+
+3. From there, the number of days played goes up by 1 and the recent date is changed to the date of the host machine.
 
 HOW TO START THE APP
 ====
