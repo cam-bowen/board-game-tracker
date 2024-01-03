@@ -14,18 +14,19 @@ module.exports = {
 		const null_days_played = 0;
 		const null_recent_date_played = "00/00/0000";
 
-		let query_add = `INSERT INTO game_info (Game, Days_Played, Recent_Date_Played) VALUES ('${game}', ${null_days_played}, '${null_recent_date_played}')`;
+		let query_add = "INSERT INTO game_info (Game, Days_Played, Recent_Date_Played) VALUES (?, ?, ?)";
 
 		console.log("SQL Query:", query_add); // to show user the SQL Query used...
 
-		db.query(query_add, (err,result) => {
+		db.query(query_add, [game, null_days_played, null_recent_date_played], (err, result) => {
 			if (err) {
 				console.log(game);
-				console.log(err);
-				console.log("failed to insert game into db");
-			}
-			else {
-				console.log("inserted game successfully");
+				console.error(err);
+				console.log("Failed to insert game into db");
+				
+			} else {
+				console.log("Inserted game successfully");
+				
 			}
 		});
 
@@ -37,7 +38,7 @@ module.exports = {
 		let new_days_played = req.body.New_Days_Played;
 		let new_recent_date_played = req.body.New_Recent_Date_Played;
 
-		let query_edit_update = `UPDATE game_info SET Game = '${new_game_name}', Days_Played = '${new_days_played}', Recent_Date_Played = '${new_recent_date_played}' WHERE Game = '${game_to_update}'`;
+		let query_edit_update = "UPDATE game_info SET Game = ?, Days_Played = ?, Recent_Date_Played = ? WHERE Game = ?";
 
 		// TODO db.query to update game [DONE]
 
