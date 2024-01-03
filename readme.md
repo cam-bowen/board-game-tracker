@@ -1,3 +1,60 @@
+Screenshots
+====
+
+![Main Button Panel](screenshots/1.png)
+![Play Game Panel](screenshots/2.png)
+![Add Game Panel](screenshots/3.png)
+![Edit Game Panel](screenshots/4.png)
+![Full Main Window](screenshots/5.png)
+![Terminal Output When Executed](screenshots/6.png)
+
+Notes by Cameron Bowen
+====
+
+What each page does:
+
+Main menu/index : shows the user the library of games, and 3 buttons (play, edit, add a game).
+
+Play Game : You type the name of your game in that you have just played, and the database will increment the number of days you nave played the game.
+
+Edit Game Info : You type the name of the game you want to edit. After that you HAVE to change the name of it, amount of days played, and recent date. If YOU DO NOT WANT to edit cerain columns/fields, you can just re-enter the value that was there previously, but you must enter something or you will lose the old data for that game.
+
+Add Game : Did you get a new board game? If so, just type the name of it into the text field and it will get added to the database with default values in the days played and recent date played field, don't worry, once you "play" the game the data and number of days played will be changed to the correct values, instead of those null values initeated when you add the game to the libarary. 
+
+Best Case Scenario When Adding A Game
+====
+
+You get a new game and enter it into the website. 
+
+You play the game.
+
+The # of days played field goes to 1 and the recent date is added to the receent data played field, which you can see at the main menu.
+
+You really should never have to edit game information, unless you misspell a game name or forget to hit "play" after a game session.
+
+
+Average Use Of App
+====
+
+1. You play a game with friends you already have.
+
+2. After playing, you start app, go to "Play Game" and type the name of the game you played.
+
+3. From there, the number of days played goes up by 1 and the recent date is changed to the date of the host machine.
+
+HOW TO START THE APP
+====
+
+0.  [NOTE]I do have the dockerfile but the docker file does not work. I attempted it, I got close, but I even had trouble getting mariadb set up on my system. The container and build keep competitng with ports, at least thats what I believe is going on...
+
+1. create a user named "root" with the password "password" with mysql/mariadb.
+
+2. create a mariadb called "miechallenge" and run the CREATE TABLE "......" command in the schema.sql in the mysql terminal/command line. (make sure you do step 1)
+
+3. npm install, npm start.
+
+
+
 Story: Board Game Directory
 =====
 
@@ -139,10 +196,6 @@ HOW TO START THE APP
 2. create a mariadb called "miechallenge" and run the CREATE TABLE "......" command in the schema.sql in the mysql terminal/command line. (make sure you do step 1)
 
 3. npm install, npm start.
-
-
-Photos of GUI + Console Output in "Screenshots" Folder.
-===
 
 
 
